@@ -10,6 +10,10 @@ This app forwards your SMS to a gmail for a quick solution to the 2FA authentica
 - [Follow this link](https://support.google.com/accounts/answer/185833) to set up gmail and get a APP PASSWORD!
 - Pick a forwarding email
 
+### Install from this repo
+- install the apk from app/build/outputs/apk/debug/app-debug.apk
+
+
 ### Build and install locally
 - Download Android Studio and open this repo
 - Build this app 
