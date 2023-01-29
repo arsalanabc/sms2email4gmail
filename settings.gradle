@@ -10,7 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "SMS 2 GMAIL"
+rootProject.name = "SMS 2 EMAIL 4 GMAIL"
 include ':app'

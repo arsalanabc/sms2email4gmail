@@ -39,9 +39,6 @@ public class GmailEmailService {
 
 
     public void sendEmail(Context context, String message){
-        Toast.makeText(context, "EMAIL SENT!"+message, Toast.LENGTH_SHORT).show();
-        if(true )return;
-
         try {
             String stringHost = "smtp.gmail.com";
             Properties properties = System.getProperties();
@@ -68,13 +65,13 @@ public class GmailEmailService {
                 public void run() {
                     try {
                         Transport.send(mimeMessage);
-                        Toast.makeText(context, "SMS Forwarded!", Toast.LENGTH_SHORT).show();
                     } catch (MessagingException e) {
                         e.printStackTrace();
                     }
                 }
             });
             thread.start();
+            Toast.makeText(context, "SMS Forwarded!", Toast.LENGTH_SHORT).show();
 
         } catch (AddressException e) {
             e.printStackTrace();

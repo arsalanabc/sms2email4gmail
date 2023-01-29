@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"><b> SMS 2 GMAIL</b></string>
+    <string name="app_name"><b>SMS 2 EMAIL 4 GMAIL</b></string>
     <!-- Strings related to login -->
     <string name="prompt_email">Sending Gmail Address</string>
     <string name="prompt_password">16 Digits Gmail App Password</string>
@@ -19,7 +19,9 @@
     <string name="permission_dialog_message">This app listens to incoming SMS and forwards to an email. Read SMS permission is required.</string>
     <string name="action_ok">Okay</string>
     <string name="app_description"> <b> This app forwards your SMS to a gmail for a quick solution to the 2FA authentication while travelling.
-        You must <a href="https://support.google.com/accounts/answer/185833"> follow this link </a> to set up gmail and get a APP PASSWORD! </b>
+        You must <a href="https://support.google.com/accounts/answer/185833"> follow this link </a> to set up gmail and get a APP PASSWORD!
+        Make sure to test the app before leaving.
+    </b>
     </string>
     <string name="app_warning"> <b>Warning: </b>Gmail has a 500 emails/day limit - Make sure to delete the APP PASSWORD once no longer using the app.
     </string>
