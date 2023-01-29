@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -70,6 +71,18 @@ public class MainActivity extends AppCompatActivity {
         return values;
     }
     private  void saveButtonListener (View view) {
+        String error = "";
+
+        if(!isEmailValid(sendingEmailView.getText().toString())){error = getString(R.string.invalid_email);}
+        else if(!isEmailValid(forwardEmailView.getText().toString())){error = getString(R.string.invalid_email);}
+        else if(!isPasswordValid(passwordView.getText().toString())){error = getString(R.string.invalid_password);}
+
+        if(!error.isEmpty()){
+            Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (true) return;
         final Map<String, String> values = updateValues();
         String toastMessage;
 
@@ -97,4 +110,16 @@ public class MainActivity extends AppCompatActivity {
                                            String permissions[], int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         this.permissionService.onRequestPermissionsResult(requestCode, permissions, grantResults);
-    }}
+    }
+
+    private boolean isEmailValid(String email) {
+        if (email == null) {
+            return false;
+        }
+        return email.contains("@") && Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    private boolean isPasswordValid(String password) {
+        return password != null && password.trim().length() == 16;
+    }
+}
