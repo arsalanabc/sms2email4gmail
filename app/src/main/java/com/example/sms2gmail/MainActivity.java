@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (true) return;
         final Map<String, String> values = updateValues();
         String toastMessage;
 
