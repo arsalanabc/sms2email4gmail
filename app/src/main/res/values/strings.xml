@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">SMS 2 GMAIL</string>
+    <string name="app_name"><b> SMS 2 GMAIL</b></string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Sending Gmail Address</string>
+    <string name="prompt_password">16 Digits Gmail App Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Save</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="forward_email">Forward Email</string>
+    <string name="save">SAVE</string>
+    <string name="preference_file_key">com.skeedo.sms2email.main_activity</string>
+    <string name="sending_gmail">sending_gmail</string>
+    <string name="gmail_app_pass">gmail_app_pass</string>
+    <string name="forwarding_email">forwarding_email</string>
+    <string name="permission_alert_dialog_title">SMS READ PERMISSION</string>
+    <string name="permission_dialog_message">This app listens to incoming SMS and forwards to an email. Read SMS permission is required.</string>
+    <string name="action_ok">Okay</string>
+    <string name="app_description"> <b> This app forwards your SMS to a gmail for a quick solution to the 2FA authentication while travelling.
+        You must <a href="https://support.google.com/accounts/answer/185833"> follow this link </a> to set up gmail and get a APP PASSWORD! </b>
+    </string>
+    <string name="app_warning"> <b>Warning: </b>Gmail has a 500 emails/day limit - Make sure to delete the APP PASSWORD once no longer using the app.
+    </string>
 </resources>
